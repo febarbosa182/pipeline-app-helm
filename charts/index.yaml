@@ -1,3 +1,25 @@
 apiVersion: v1
-entries: {}
-generated: "2022-09-20T22:24:48.002371-03:00"
+entries:
+  pipeline-simple-app:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-11-14T12:22:06.755979-03:00"
+    description: A Helm chart for Kubernetes
+    digest: c00adde464f104e642f7dbaa0765586eb4da787230fc8f1d8f6494f14fd156a9
+    name: pipeline-simple-app
+    type: application
+    urls:
+    - pipeline-simple-app-0.1.0.tgz
+    version: 0.1.0
+  pipeline-simple-app-rollout:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-11-14T12:22:06.75712-03:00"
+    description: A Helm chart for Kubernetes
+    digest: 92bf33472c511f49e88f73d0b3b63f1561232177c5aedad0bacd354d9e1b7a59
+    name: pipeline-simple-app-rollout
+    type: application
+    urls:
+    - pipeline-simple-app-rollout-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-11-14T12:22:06.752819-03:00"

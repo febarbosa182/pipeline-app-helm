@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "pipeline-simple-app-rollout.fullname" . }}
+  labels:
+    {{- include "pipeline-simple-app-rollout.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    {{- include "pipeline-simple-app-rollout.selectorLabels" . | nindent 4 }}
